@@ -9,7 +9,7 @@ public extension Node {
         au.reset()
 
         // Call AudioUnitReset due to https://github.com/AudioKit/AudioKit/issues/2046
-        if let v2au = (au as? AUAudioUnitV2Bridge)?.audioUnit {
+        if let v2au: AudioUnit = (au as? AUAudioUnitV2Bridge)?.audioUnit {
             AudioUnitReset(v2au, kAudioUnitScope_Global, 0)
         }
     }
