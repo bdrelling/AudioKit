@@ -11,4 +11,4 @@ jobs:
     with:
       scheme: AudioKit
       platforms: iOS macOS
-      swift-versions: 5.5
+      swift-versions: 5.7
